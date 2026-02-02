@@ -16,10 +16,10 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.cm as cm
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from env_helpers import make_env
-from model_construction import construct_ae_model, construct_trans_model
-from training_helpers import make_argparser, process_args
-from data_logging import init_experiment
+from .env_helpers import make_env
+from .model_construction import construct_ae_model, construct_trans_model
+from .training_helpers import make_argparser, process_args
+from .data_logging import init_experiment
 
 
 class ModelDebugGUI:

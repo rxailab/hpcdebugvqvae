@@ -24,11 +24,11 @@ from stable_baselines3.common.evaluation import evaluate_policy
 # Import your modules
 from shared.models import *
 from shared.trainers import *
-from data_helpers import *
-from env_helpers import *
-from training_helpers import *
-from model_construction import *
-from utils import obs_to_img
+from .data_helpers import *
+from .env_helpers import *
+from .training_helpers import *
+from .model_construction import *
+from .utils import obs_to_img
 
 SB3_DIR = 'mbrl_runs/'
 N_EXAMPLE_ROLLOUTS = 4

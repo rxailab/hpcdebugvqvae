@@ -6,7 +6,7 @@ import numpy as np
 import torch
 import torch.optim as optim
 
-from .env_helpers import preprocess_obs
+from ..env_helpers import preprocess_obs
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 sys.path.insert(1, os.path.join(sys.path[0], '../..'))
@@ -34,7 +34,7 @@ except ModuleNotFoundError:
         from ..training_helpers import *
     except ModuleNotFoundError:
         from training_helpers import *
-from model_construction import *
+from ..model_construction import *
 from .rl_utils import *
 
 

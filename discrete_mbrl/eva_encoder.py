@@ -18,10 +18,10 @@ from matplotlib.gridspec import GridSpec
 
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from env_helpers import make_env
-from model_construction import construct_ae_model
-from training_helpers import make_argparser, process_args
-from data_logging import init_experiment
+from .env_helpers import make_env
+from .model_construction import construct_ae_model
+from .training_helpers import make_argparser, process_args
+from .data_logging import init_experiment
 
 
 def preprocess_obs(obs):
